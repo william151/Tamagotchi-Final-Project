@@ -8,33 +8,33 @@ The Tamagotchi game was developed using the principles of object-oriented progra
 
 Instructions:
 
-Compile and run the C++ program using a suitable compiler.
+ Compile and run the C++ program using a suitable compiler.
 
-You will be presented with a menu to either create a new pet, load a saved pet, or exit.
+ You will be presented with a menu to either create a new pet, load a saved pet, or exit.
 
-After choosing the pet type, you will be able to give your pet a name.
+ After choosing the pet type, you will be able to give your pet a name.
 
-When a pet is either loaded or given a name, base stats of 50 will be given to each pet if created or stats from the previous save will be loaded.
+ When a pet is either loaded or given a name, base stats of 50 will be given to each pet if created or stats from the previous save will be loaded.
 
-In the main loop, you have the options of either feeding, playing or putting your pet to sleep.
+ In the main loop, you have the options of either feeding, playing or putting your pet to sleep.
 
-This will update their values accordingly to what you choose;
+ This will update their values accordingly to what you choose;
 
-To exit the game, you can either select to save the game for future use or exit the program.
+ To exit the game, you can either select to save the game for future use or exit the program.
 
 
 Differences Between the Final Implementation and the Plan:
 
-During the final testing of the game, I noticed that some updates weren’t updating correctly and some updated too quick for the game to finish. I was able to find some of the errors but some errors are still lingering around the code that I wasn’t able to find. I also added the virtual void in the pets class in order to call the message that is chosen in main.
+ During the final testing of the game, I noticed that some updates weren’t updating correctly and some updated too quick for the game to finish. I was able to find some of the errors but some errors are still lingering around the code that I wasn’t able to find. I also added the virtual void in the pets class in order to call the message that is chosen in main.
 
 Classes:
 
-Pet: This is a general-purpose pet's basic class. It controls the pet's condition, including how hungry, sleepy, and bored it is. The Pet class also has interaction methods that modify the state variables, such as feed(), play(), and sleep(). It also offers the nextHour() method, which modifies the pet's state data to account for the passing of time.
+ Pet: This is a general-purpose pet's basic class. It controls the pet's condition, including how hungry, sleepy, and bored it is. The Pet class also has interaction methods that modify the state variables, such as feed(), play(), and sleep(). It also offers the nextHour() method, which modifies the pet's state data to account for the passing of time.
 
-Cat: This is a cat-specific derived class that derives from the Pet class. The interaction methods (feed(), play(), and sleep()) are overridden by the Cat class to offer certain cat-specific behaviors and messages.
+ Cat: This is a cat-specific derived class that derives from the Pet class. The interaction methods (feed(), play(), and sleep()) are overridden by the Cat class to offer certain cat-specific behaviors and messages.
+ 
+ Dog: Another derived class that a dog that derives from the Pet class is this one. The Dog class extends the interaction routines to give certain behaviors and messages tailored to dogs, much like the Cat class does.
 
-Dog: Another derived class that a dog that derives from the Pet class is this one. The Dog class extends the interaction routines to give certain behaviors and messages tailored to dogs, much like the Cat class does.
-
-Fish: This derived class, which represents a fish, likewise descended from the Pet class. Like the other derived classes, the Fish class extends the interaction functions to offer certain fish-specific behaviors and messages.
+ Fish: This derived class, which represents a fish, likewise descended from the Pet class. Like the other derived classes, the Fish class extends the interaction functions to offer certain fish-specific behaviors and messages.
 
  
