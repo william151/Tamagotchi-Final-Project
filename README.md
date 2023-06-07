@@ -7,6 +7,7 @@ Users may select, care for, and interact with a pet in the simple and engaging c
 The Tamagotchi game was developed using the principles of object-oriented programming (OOP). With this approach, the emphasis is using classes and objects to represent actual things, like dogs, and their traits and behaviors. The concept of the game is based on a main Pet class, from which subclasses for other types of pets were developed. The Pet class must monitor the pet's health, including its levels of boredom, fatigue, and hunger. Derived classes like Cat, Dog, and Fish inherit the primary Pet class, but they override the methods to provide unique behaviors for each type of pet.
 
 Instructions:
+
 Compile and run the C++ program using a suitable compiler.
 
 You will be presented with a menu to either create a new pet, load a saved pet, or exit.
